@@ -2,10 +2,139 @@
 <html lang="en">
   <head>
     <title>Sample meeting minutes</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="im lovin it" />
+    <meta name="keywords" content="HTML, epic" />
+    <link
+      rel="shortcut icon"
+      href="https://cse110-f2021.github.io/Lab2_ScavengerHunt/favicon.ico"
+    />
   </head>
   <body>
-    <p>
-        In this section, you will be building a simple webpage representing the meeting minutes for a sample team. 
-    </p>
+    <header>
+      <h1>Meeting Minute</h1>
+      <h2>4/16/2023</h2>
+      <h3>Attendance</h3>
+      <ul>
+        <li>Addy</li>
+        <li>Bob</li>
+        <li>Candace</li>
+      </ul>
+    </header>
+
+    <nav>
+      <a href="https://github.com/dowhep/CSE110_Lab2_Starter">Source Code</a>
+      <a href="https://github.com/CSE110-FA22/Lab2_Starter">Starter Code</a>
+    </nav>
+
+    <main>
+      <hr />
+      <h2>Main content</h2>
+      <h3>Agenda</h3>
+      <ol>
+        <li>Go over Unfinished Business</li>
+        <li>Go over new business</li>
+        <li>Go over comments and complains</li>
+      </ol>
+
+      <div>
+        <p>
+          Note that notes are for notes only, any extension use of notes are
+          strictly prohibited
+        </p>
+      </div>
+      
+      <h3>Unfinished Business</h3>
+      <ul>
+        <li>Finish this page</li>
+        <ul>
+          <li>Diagram</li>
+          <img src="https://th.bing.com/th/id/OIP.Iv5rg-Rq9lZ6F1WGFukfzgHaD0?pid=ImgDet&rs=1">
+        </ul>
+        <li>Finish part 2</li>
+        <li>Make this page look good</li>
+      </ul>
+
+      <h3>New Business</h3>
+      <ul>
+        <li>
+          Building a simple webpage representing the meeting minutes for a
+          sample team
+        </li>
+        <li>Very <b>bold</b> and <i>italic</i> information</li>
+        <li>Not so <strong>strong</strong> and <em>emphasized</em> text</li>
+        <li>To reference from future</li>
+      </ul>
+
+      <h3>Comments and Complains</h3>
+      <ul>
+        <li>WHY IS EVERY TAG A REQUIREMENT</li>
+      </ul>
+    </main>
+
+    <section>
+      <hr />
+      <h2>Side content</h2>
+      <h3><span>Memes</span></h3>
+      <ol>
+        <li>Open Reddit</li>
+        <li>Go To Programmer Humor</li>
+        <li>Enjoy Memes</li>
+      </ol>
+
+      <br />
+      <img src="https://i.redd.it/2clrzuc446ia1.png" />
+      <br />
+      <h3>Recordings</h3>
+      <details>
+        <summary>
+          Video
+        </summary>
+        <video width="320" height="240" controls>
+          <source src="recording/meeting.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </details>
+      <details>
+        <summary>
+          Audio
+        </summary>
+        <audio controls>
+          <source src="recording/meeting.mp3" type="audio/mpeg">
+          Your browser does not support the audio tag.
+        </audio>
+      </details>
+      <br />
+      <h3>Form</h3>
+      <h4>PLEASE FILL THIS OUT!</h4>
+      <form>
+        <fieldset>
+          <legend>Fieldset looks kinda lit</legend>
+          <label>Name:</label>
+          <input type="text" list="nameList"><br><br>
+          <label>Comments and Complains:</label>
+          <textarea placeholder="Write something!"></textarea><br><br>
+          <label>Test:</label>
+          <select>
+            <option>A</option>
+            <option>B</option>
+            <option>Choose me!</option>
+            <option>D</option>
+          </select><br><br>
+          <button type="button">Submit</button>
+        </fieldset>
+      </form>
+      <datalist id="nameList">
+        <option>Curious Cat</option>
+      </datalist>
+    </section>
+    
+
+    <footer>
+      <hr />
+      <p>
+        End of page
+      </p>
+    </footer>
   </body>
 </html>
