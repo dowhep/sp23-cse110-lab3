@@ -16,26 +16,174 @@
 
 hr {
   border-top: 1px dashed #999999;
+  margin: auto;
 }
 
 #attendance {
   background-color: aliceblue;
   margin: 0px 5px 0px 5px;
-  padding: 0px 5px 5px 15px;
+  padding: 0pt 5pt 5pt 15pt;
   border-style: dashed;
   border-color: rgb(220, 230, 240);
   border-width: 4px;
   border-radius: 10px;
 }
 
-.stick {
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
+.nav_bar {
+  position: static;
   display: flex;
   justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
   margin-top: 20px;
   margin-right: 5px;
   margin-bottom: 0px;
   margin-left: 5px;
 }
 
+.view_port_transition {
+  background: radial-gradient(circle farthest-side at 50% calc(100% + 600vh + 600vw), rgba(2,0,36,0) 99.92%, rgb(0, 0, 0) 99.95%, rgb(0, 0, 0) 99.975%, rgba(255,255,255,1) 100%);
+  min-height: 32px;
+}
+
+.title {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  padding-top: 0mm;
+  padding-right: 0mm;
+  padding-bottom: 0mm;
+  padding-left: 0mm;
+  margin-top: 0lh;
+  margin-left: 0lh;
+  margin-bottom: 0lh;
+  margin-right: 0lh;
+}
+
+body {
+  margin-left: 0vh;
+  margin-right: 0vh;
+  margin-top: 0vh;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+ul, ol {
+  border-style: dotted;
+  border-color: grey;
+}
+
+a[href] {
+  color: darkblue;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+a[href]:hover {
+  color: deepskyblue;
+}
+
+a[href]:active {
+  color: deeppink;
+}
+
+.display1 {
+  display: block;
+}
+
+.display2 {
+  display: inline;
+}
+
+video {
+  width: 100%;
+  height: 240;
+}
+
+audio {
+  min-width: 100%;
+}
+
+button {
+  color: grey;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+
+button:active {
+  color: rebeccapurple;
+}
+
+.no_margin {
+  margin: 0;
+  padding: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  height: 100vw;
+  align-items: stretch;
+}
+
+div.tan_dot {
+  background-color: tan;
+  border-radius: 20%;
+}
+
+div.brown_dot {
+  background-color: brown;
+  border-radius: 20%;
+}
+
+@media (min-width: 30vh) {
+  .min_width {
+    display: none;
+  }
+}
+
+@media (max-width: 30vh) {
+  .min_width {
+    background-color: white;
+    color: black;
+    position: absolute;
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;  
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+  }
+}
+
+ul li ul {
+  margin-right: 20px;
+}
+
+li > img {
+  width:100%;
+}
+
+a ~ p {
+  font-size: small;
+}
+
+ol + p {
+  font-size: small;
+}
